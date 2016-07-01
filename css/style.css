@@ -1,0 +1,44 @@
+.navbar-offcanvas {
+    position: absolute;
+    width: 200px;
+    display: block;
+    top: 0;
+    right: -200px;
+}
+
+@media (min-width: 768px) {
+    .navbar-offcanvas {
+        position: static;
+        width: auto;
+        display: initial;
+    }
+}
+
+.navbar-offcanvas .navbar-nav {
+    margin:0;
+}
+
+header nav, main {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    background: #aaa;
+    right: 0;
+}
+
+ .navbar-open main {
+    right: 200px;
+ }
+
+.navbar-open header nav {
+    right: 200px;
+}
+
+header {
+    margin-bottom: 50px;
+}
